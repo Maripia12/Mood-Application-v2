@@ -1,0 +1,10 @@
+.container2{
+    border: solid 5px whitesmoke;
+    background-color: rgb(155, 196, 196);
+    width: max-content;
+    position: absolute;
+    right:195px;
+    top: 55%;
+    padding: 20px;
+    box-shadow: 8px 8px 5px rgb(189, 179, 189);
+}

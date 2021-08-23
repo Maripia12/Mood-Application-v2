@@ -1,0 +1,19 @@
+img {
+        position: abosolute;
+        margin-right: 85%;
+        box-shadow: rgb(33, 174, 184);
+        
+    }
+    
+    header{
+        background-color: white ;
+        height: 15vh;
+        border: solid 5px rgb(138, 107, 82);
+    }
+
+    .wave{
+        position: absolute;
+        left : 78%;
+        
+
+    }

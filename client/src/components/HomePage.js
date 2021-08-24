@@ -10,7 +10,7 @@ export const HomePage = () => {
         <body>
             <Navbar/>
             <div id="container">
-            <div id="mainP"> Welcome to MindQuote</div>
+            <div id="mainP"> Welcome to your Mood Journal</div>
             <form id="searchForm">
                 <label id="searchLabel">Search</label>
                 <input for="text" id="searchInput" placeholder="search your favorite quote"></input>

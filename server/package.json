@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "client": "cd client && npm start",
     "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server "

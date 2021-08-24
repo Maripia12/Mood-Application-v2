@@ -1,0 +1,29 @@
+body{
+    background-color:  rgb(33, 174, 184);
+    text-align: center;
+}
+
+#container{
+    margin: 10px;
+}
+
+ #mainP{
+    font-weight: 600;
+}
+#searchLabel{
+    /* margin: 10px; */
+} 
+
+#searchForm{
+    /* display: inline; */
+    /* background-color: red; */
+    /* padding: 5px; */
+}
+
+#searchInput{
+    margin: 10px;
+    padding: 5px 20px;
+}
+.searchBtn{
+    max-width: 100px;
+}

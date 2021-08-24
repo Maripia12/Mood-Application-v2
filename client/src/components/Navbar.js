@@ -4,7 +4,7 @@ import './../css/Navbar.css'
 export const Navbar = () => {
     return (
         <nav>
-           <div id="navText"> MindQuote  </div> 
+           <div id="navText"> Mood Journal </div> 
            <a className="mrg" onClick={logout}>Logout</a>
         </nav>
     )

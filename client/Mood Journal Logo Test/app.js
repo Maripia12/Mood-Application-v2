@@ -20,7 +20,6 @@ for (let i = 0; i < logo.length; i++) {
   // Increment delay property
   delay += 0.03;
 }
-// Insert svg animation rule into stylesheet
 document.styleSheets[0].insertRule(`#logo { 
   animation: fill 2s ease forwards ${delay+2}s
 }`);

@@ -14,7 +14,7 @@ for (let i = 0; i < logo.length; i++) {
     // Set each path style property
     letter.style.setProperty(
       s == 'stroke' ? 'stroke' : s == 'delay' ? '--delay' : `stroke-dash${s}`,
-      s == 'stroke' ? 'white' : s == 'delay' ? `${0.5}s` : totalLength
+      s == 'stroke' ? 'white' : s == 'delay' ? `${2}s` : totalLength
     );
   }
   // Increment delay property

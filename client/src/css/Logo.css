@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body {
+body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -26,6 +21,6 @@
   }
   @keyframes fill {
     to {
-      fill: white;
+      fill: rgb(138, 107, 82);
     }
   }

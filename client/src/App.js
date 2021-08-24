@@ -1,27 +1,27 @@
-import React from "react";
-import Header from ".client/Components/Header";
-import Login from ".client/Components/Login/Login";
-
-
-import "./App.css";
-import SignUp from ".client/Components/SignUp/SingUp";
-
-
+import { LoginPage } from './components/LoginPage';
+import { SignupPage } from './components/SignupPage';
+import {HomePage} from './components/HomePage';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
+
   return (
-    <div className="App">
-      <div>
-      <Header />
-      <Login />
-      <SignUp />
+
+   <>
+      <Switch>
+                <Route path="/" component={HomePage} exact />
+                  
+                <Route path="/login" > <LoginPage/> </Route>
+                <Route path="/signup" component={SignupPage} />
+            </Switch>
+
     
-      
-
-
-      </div>
-        
-    </div>
+   </>
   );
 }
 

@@ -1,34 +1,35 @@
-// const express = require('express');
-// const { ApolloServer } = require('apollo-server-express');
-// const path = require('path');
+const express = require('express');
+const mongoose = require('mongoose');
 
-// const { typeDefs, resolvers } = require('./schemas');
-// const db = require('./config/connection');
+const logger = require("morgan");
+//const url = "mongodb://localhost/workout";
+const db=require('./config/config').get(process.env.NODE_ENV);
 
-// const PORT = process.env.PORT || 3001;
-// const app = express();
+const routes = require('./routes/user');
+const User=require('./models/user');
+const {auth} =require('./middleware/auth');
 
-// const server = new ApolloServer({
-//   typeDefs,
-//   resolvers,
-// });
 
-// server.applyMiddleware({ app });
+const app = express();
 
-// app.use(express.urlencoded({ extended: false }));
-// app.use(express.json());
+app.use(logger("dev"));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+app.use(express.static("public"));
 
-// if (process.env.NODE_ENV === 'production') {
-//   app.use(express.static(path.join(__dirname, '../client/build')));
-// }
+mongoose.Promise=global.Promise;
+mongoose.connect(db.DATABASE,{ useNewUrlParser: true,useUnifiedTopology:true },function(err){
+    if(err) console.log(err);
+    console.log("database is connected");
+});
 
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, '../client/build/index.html'));
-// });
 
-// db.once('open', () => {
-//   app.listen(PORT, () => {
-//     console.log(`API server running on port ${PORT}!`);
-//     console.log(`Use GraphQL at http://localhost:${PORT}${server.graphqlPath}`);
-//   });
-// });
+
+
+//app.use(require("./routes/api.js"));
+app.use(routes);
+
+const PORT=process.env.PORT||5000;
+app.listen(PORT, () => {
+    console.log('App running on port '+PORT);
+});

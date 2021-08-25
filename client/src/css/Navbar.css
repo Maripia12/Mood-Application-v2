@@ -1,0 +1,21 @@
+nav{
+    background-color: rgb(83, 178, 255);
+    text-align: center;
+    font-weight: bolder;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#navText{
+    margin:  auto;
+    color: rgb(255, 253, 253);
+
+}
+
+.mrg{
+    margin: 15px;
+    cursor: pointer;
+}

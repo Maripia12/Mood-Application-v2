@@ -1,0 +1,23 @@
+body {
+  background-color: rgb(50, 184, 189);
+  margin: 0;
+  font-family: 'Kalam', cursive;
+  font-size: larger;
+  font-weight: bold;
+  color: rgb(9, 43, 44);
+}
+
+.boat {
+  position: absolute;
+  left:215px;
+  top: 24%;
+  border: solid 5px whitesmoke;
+  box-shadow: 5px 5px 5px solid aquamarine;
+}
+
+code {
+
+  font-family: 'Kalam', cursive;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,
+    monospace; */
+}

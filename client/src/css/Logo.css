@@ -1,0 +1,26 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(33, 174, 184);
+  }
+  #logo {
+    width: 75%;
+    fill: transparent;
+  }
+  #logo path {
+    stroke-width: 2;
+    animation: line-anim 2s ease forwards var(--delay);
+  }
+  @keyframes line-anim {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes fill {
+    to {
+      fill: rgb(138, 107, 82);
+    }
+  }

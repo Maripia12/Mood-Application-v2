@@ -1,0 +1,26 @@
+[
+  {
+    "moodType": "Happy",
+    "quote": [
+      "See that being joyfull is your fundemental responsibility",
+      "See the mind for what it is",
+      "Realize that joy is your original nature"
+    ]
+  },
+  {
+    "moodType": "Sad",
+    "quote": [
+      "Sadness is also a kind of defence",
+      "Sadness flies away on the wings of time.",
+      "Sad hurts but it's a healthy feeling."
+    ]
+  },
+  {
+    "moodType": "Angry",
+    "quote": [
+      "Anger makes you smaller, while forgiveness forces you to grow beyond what you were.",
+      "When anger rises, think of the consequences.",
+      "If you are patient in one moment of anger, you will escape a hundred days of sorrow."
+    ]
+  }
+]

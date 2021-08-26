@@ -1,6 +1,7 @@
 import { LoginPage } from './components/LoginPage';
 import { SignupPage } from './components/SignupPage';
 import {HomePage} from './components/HomePage';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +12,8 @@ import {
 function App() {
 
   return (
+
+   
 
    <>
       <Switch>

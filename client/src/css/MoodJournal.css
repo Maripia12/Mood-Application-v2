@@ -19,3 +19,30 @@
 }
 
 
+.angry {
+    background-color: rgb(245, 45, 45);
+}
+
+.anxious {
+    background-color: orange;
+}
+.energetic {
+    background-color: yellow;
+}
+
+.calm {
+    background-color: steelblue;
+}
+.sad {
+    background-color: #bc8f8f;
+}
+.focused {
+    background-color: rgb(223, 138, 223);
+}
+.happy{
+    background-color: salmon;
+}
+
+.tired {
+    background-color: #89cfeb;
+}

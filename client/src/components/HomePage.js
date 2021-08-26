@@ -1,31 +1,41 @@
-import React from "react";
-import "./../css/HomePage.css";
+
+import React, {useState} from 'react'
+import './../css/HomePage.css'
+import { MoodJournal } from './MoodJournal'
+
+
 
 import { Navbar } from "./../components/Navbar";
 
 export const HomePage = () => {
-  if (localStorage.getItem("token")) {
+
+const [currentPage, setCurrentPage] = useState('Home');
+ const renderPage = () => {
+    if (currentPage === 'Home') {
+      return <MoodJournal />;
+    }
+    if (currentPage === 'Saved') {
+      return <>
+      <h1>Saved entries go here</h1>
+      </>;
+    }
+  
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
+
+    if(localStorage.getItem("token")){
     return (
-      <body>
-        <Navbar />
-        <div id="container">
-          <div id="mainP"> Welcome to your Mood Journal</div>
-          <form id="searchForm">
-            <label id="searchLabel">Search</label>
-            <input
-              for="text"
-              id="searchInput"
-              placeholder="search your favorite quote"
-            ></input>
-            <br />
-            <button id="btn" className="searchBtn">
-              Search
-            </button>
-          </form>
-        </div>
-      </body>
-    );
-  } else {
-    window.location.href = "/login";
-  }
-};
+       <div className="container-fluid">
+            <Navbar currentPage={currentPage} handlePageChange={handlePageChange}/>
+           {renderPage()}
+            
+      </div>
+    )
+    }
+    else{
+        window.location.href="/login";
+    }
+}
+
+  

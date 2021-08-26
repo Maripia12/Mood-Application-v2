@@ -76,25 +76,24 @@ window.location.href="/";
 </div>
 
 
-         <img className= "turtle" src="https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475"></img>              
+ 
+         <img className= "turtle" src="https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475"/>              
                  </form>
 
 
-          {/* <div className= "slide-container">
-             <div class= "image-container">
-               <img src = "https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475" class = "slider-image"></img>
-               <img src = "https://www.hellolovelystudio.com/wp-content/uploads/2018/04/aqua-blue-inspirational-quote-hello-lovely-studio-grateful-anyway.jpg " class = "slider-image"></img>
-             </div>
-          </div>       
-             */}
-        </div>
+  
+  
+</div>
 
-     );
-        
-      }
+);
+}
 }
 
-// export const LoginPage = () => {
+
+
+
+
+{/* // export const LoginPage = () => 
 
      
 
@@ -115,4 +114,4 @@ window.location.href="/";
             
 //         </div>
 //     )
-// }
+// } */}

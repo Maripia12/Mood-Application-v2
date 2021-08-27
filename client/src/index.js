@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ApolloClient, InMemoryCache, ApolloProvider, useQuery,gql } from '@apollo/client';
+// import { ApolloClient, InMemoryCache, ApolloProvider, useQuery,gql } from '@apollo/client';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 

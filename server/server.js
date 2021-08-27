@@ -10,10 +10,6 @@ const routes1 = require('./routes/quote');
 const User=require('./models/user');
 const {auth} =require('./middleware/auth');
 
-const routes = require("./routes/user");
-const User = require("./models/user");
-const { auth } = require("./middleware/auth");
-
 const app = express();
 
 app.use(logger("dev"));

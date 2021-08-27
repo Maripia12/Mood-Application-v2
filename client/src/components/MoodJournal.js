@@ -2,19 +2,28 @@ import React, {useState} from 'react'
 import './../css/MoodJournal.css'
 
 export const MoodJournal = () => {
+
+  if(moodState=angry){
+  const textArea = document.querySelector(".select-mood")
+  textArea.background-color = (rgb(245, 45, 45)
+  }
+  else
     const [moodState,setMoodState] = useState('')
 
+
+  // else if (state = mood:anxious){
+
     // var colors = [
-    //   {
+    //   
     //     value:'angry',
     //     label:"rgb(245, 45, 45)"
-    //   },
+    //   }
     //   {
     //     value:'anxious',
     //     label:"orange"
     //   },
     //   {
-    //     value:'energetic',
+    //     value:'energetic'
     //     label:"yellow"
     //   },
     //   {

@@ -2,33 +2,84 @@ import React, {useState} from 'react'
 import './../css/MoodJournal.css'
 
 export const MoodJournal = () => {
+    const [moodState,setMoodState] = useState('')
+
+    // var colors = [
+    //   {
+    //     value:'angry',
+    //     label:"rgb(245, 45, 45)"
+    //   },
+    //   {
+    //     value:'anxious',
+    //     label:"orange"
+    //   },
+    //   {
+    //     value:'energetic',
+    //     label:"yellow"
+    //   },
+    //   {
+    //     value:'calm',
+    //     label:"steelblue"
+    //   },
+    //   {
+    //     value:'sad',
+    //     label:"rgb(223, 138, 223)"
+    //   },
+    //   {
+    //     value:'happy',
+    //     label:"salmon"
+    //   },
+    //    {
+    //     value:'tired',
+    //     label:"#89cfeb"
+    //   }
+    // ];
+    // var [setbgcolor, ddlvalue]=useState(colors.label);
+    // var ddlhandle = e =>
+    // {
+    //   ddlvalue(e.label);
+    // }
+
+
     return (
-       <div id="container">
+
+   
+     <div id="container">
             <div id="mainP"> Welcome to your Mood Journal 📝</div>
                  <br />
-                <select class= "select-mood">
+                <select 
+                className= "select-mood"
+                onChange={(e)=> {
+                  const selectedMood = e.target.value;
+                  
+                  setMoodState(selectedMood);
+                }}
+                >
                     <option disabled selected>What is your mood today?</option>
-                    <option value="angry">Frustrated</option>
-                    <option value="anxios">Anxious</option>
-                    <option value="energetic">Energetic</option>
-                    <option value="calm">Calm</option>
-                    <option value="sad">Sad</option>
-                    <option value="focused">Focused </option>
-                    <option value="happy">Happy</option>
-                    <option value="tired">Tired</option>
+                    <option className= "angry" value="angry">Frustrated</option>
+                    <option className= "anxious" value="anxious">Anxious</option>
+                    <option className= "energetic" value="energetic">Energetic</option>
+                    <option className= "calm" value="calm">Calm</option>
+                    <option className= "sad" value="sad">Sad</option>
+                    <option className= "focused" value="focused">Focused </option>
+                    <option className= "happy" value="happy">Happy</option>
+                    <option className= "tired" value="tired">Tired</option>
                      
                 {/* <button id="btn" className="searchBtn">Search</button> */}
+
+
+
                 </select>
 
-                <div>
+             <div>
  
         <div class="container">
           <div class="row body">
             <article class ="card">
-            <div class="journal"></div>
+            <div className="select"></div>
                <p class= "journal">
-                <textarea cols="120" rows="30" name="journal">
-                {/* <a href = '#'></a> */}
+                <textarea className = "select-mood" useState = "color"
+                cols="120" rows="30" name="journal">
                 </textarea>
                   </p>
                <input class="btn btn-save" type="submit" value="Save" />
@@ -37,7 +88,12 @@ export const MoodJournal = () => {
           </div>
         </div>
     </div>
-</div>
+   </div>
+   
+ 
+
+ 
+ 
            
     )
 }

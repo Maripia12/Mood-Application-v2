@@ -1,10 +1,13 @@
 body{
-    background-color:  rgb(33, 174, 184);
+    background-color: rgb(245, 242, 239);
     text-align: center;
 }
 
 #container{
-    margin: 10px;
+    /* margin: 10px; */
+    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
 }
 
  #mainP{
@@ -24,6 +27,57 @@ body{
     margin: 10px;
     padding: 5px 20px;
 }
-.searchBtn{
+
+#btns{
+    position: relative;
+    right: 0px;
+}
+.btn{
     max-width: 100px;
+    background-color: rgb(83, 178, 255);
+    border: none;
+    color: white;
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#btnDelete{
+    background-color: rgb(250, 15, 15);
+}
+
+#textarea{
+    width: 90%;
+    height: 50vh;
+}
+
+#topContainer{
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+#topContainer h4{
+    /* color: white; */
+}
+
+.btnTop{
+    background-color: rgb(83, 178, 255);
+    border: none;
+    color: white;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 400;
+    margin: 0px 10px;
+    cursor: pointer;
 }

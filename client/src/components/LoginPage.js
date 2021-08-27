@@ -1,8 +1,5 @@
 import React from 'react'
 import './../css/LoginPage.css'
-
-import { Header } from './../components/Header'
-
 //export const LoginPage = () => {
 export class LoginPage extends React.Component{
     constructor(props) {
@@ -37,6 +34,7 @@ export class LoginPage extends React.Component{
                     if(data.success){
                     alert(data.message);
                     localStorage.setItem("token",data.token);
+                    localStorage.setItem("user_id",data.msg._id);
 window.location.href="/";
                     }
                     else{
@@ -56,11 +54,7 @@ window.location.href="/";
               window.location.href="/";
           }
           return(
-     
-
 <div id="main-login">
-<Header/>
-
              <h3 id="form-heading">Login</h3>
                  <form id="main-form">
                          <label className="formLabel">Email</label>
@@ -69,28 +63,15 @@ window.location.href="/";
                          <label className="formLabel">Password</label>
                          <input className="formInput" type="password" value={this.state.password} onChange={this.handlePassword} id ="password" for="password" />
 <div className="btn-r">
-<button type="submit" onClick={this.handleSubmit} id="btn">Login</button>
+<button type="submit" onClick={this.handleSubmit} id="btn">login</button>
 <button type="submit" onClick={this.GotoSignup} id="btn" className="btn-l">Signup</button>
-
-
+                  
 </div>
-
-
-         <img className= "turtle" src="https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475"></img>              
+                       
                  </form>
-
-
-          {/* <div className= "slide-container">
-             <div class= "image-container">
-               <img src = "https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475" class = "slider-image"></img>
-               <img src = "https://www.hellolovelystudio.com/wp-content/uploads/2018/04/aqua-blue-inspirational-quote-hello-lovely-studio-grateful-anyway.jpg " class = "slider-image"></img>
-             </div>
-          </div>       
-             */}
+            
         </div>
-
-     );
-        
+          );
       }
 }
 

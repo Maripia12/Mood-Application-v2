@@ -7,15 +7,16 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { AllMoods } from './components/AllMoods';
 
-function App() {
+function App() {  
 
   return (
 
    <>
       <Switch>
-                <Route path="/" component={HomePage} exact />
-                  
+                <Route path="/" component={()=>(<HomePage />)} exact />
+                <Route path="/allMoods" > <AllMoods/> </Route>
                 <Route path="/login" > <LoginPage/> </Route>
                 <Route path="/signup" component={SignupPage} />
             </Switch>
@@ -23,6 +24,12 @@ function App() {
     
    </>
   );
+
+ 
 }
+
+
+
+
 
 export default App;

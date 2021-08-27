@@ -11,8 +11,9 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { AllMoods } from './components/AllMoods';
 
-function App() {
+function App() {  
 
   return (
 
@@ -21,12 +22,8 @@ function App() {
   
    
       <Switch>
-            
-                {/* <Route path= "/" component={Cover} exact/> */}
-                <Route path="/" component={HomePage} exact />
-                {/* <Navbar /> */}
-                 
-                  
+                <Route path="/" component={()=>(<HomePage />)} exact />
+                <Route path="/allMoods" > <AllMoods/> </Route>
                 <Route path="/login" > <LoginPage/> </Route>
                 <Route path="/signup" component={SignupPage} />
 
@@ -39,6 +36,12 @@ function App() {
     
    
   );
+
+ 
 }
+
+
+
+
 
 export default App;

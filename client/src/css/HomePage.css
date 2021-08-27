@@ -1,10 +1,13 @@
 body{
-    background-color:  rgb(33, 174, 184);
+    background-color: rgb(245, 242, 239);
     text-align: center;
 }
 
 #container{
-    margin: 10px;
+    /* margin: 10px; */
+    padding: 10px;
+    width: 90%;
+    margin: 10px auto;
 }
 
  #mainP{

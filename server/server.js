@@ -3,11 +3,12 @@ const mongoose = require("mongoose");
 
 const logger = require("morgan");
 //const url = "mongodb://localhost/workout";
-const db = require("./config/config").get(process.env.NODE_ENV);
+const db=require('./config/config').get(process.env.NODE_ENV);
 
-const routes = require("./routes/user");
-const User = require("./models/user");
-const { auth } = require("./middleware/auth");
+const routes = require('./routes/user');
+const routes1 = require('./routes/quote');
+const User=require('./models/user');
+const {auth} =require('./middleware/auth');
 
 const app = express();
 
@@ -28,6 +29,7 @@ mongoose.connect(
 
 //app.use(require("./routes/api.js"));
 app.use(routes);
+app.use(routes1);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

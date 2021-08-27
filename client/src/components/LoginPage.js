@@ -1,5 +1,8 @@
 import React from 'react'
 import './../css/LoginPage.css'
+
+import { Header } from './../components/Header'
+
 //export const LoginPage = () => {
 export class LoginPage extends React.Component{
     constructor(props) {
@@ -55,6 +58,7 @@ window.location.href="/";
           }
           return(
 <div id="main-login">
+<Header />
              <h3 id="form-heading">Login</h3>
                  <form id="main-form">
                          <label className="formLabel">Email</label>
@@ -70,7 +74,7 @@ window.location.href="/";
                        
                  </form>
 
-          );
+         
       
 
 

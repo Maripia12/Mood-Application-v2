@@ -4,43 +4,6 @@ import './../css/MoodJournal.css'
 export const MoodJournal = () => {
     const [moodState,setMoodState] = useState('')
 
-    // var colors = [
-    //   {
-    //     value:'angry',
-    //     label:"rgb(245, 45, 45)"
-    //   },
-    //   {
-    //     value:'anxious',
-    //     label:"orange"
-    //   },
-    //   {
-    //     value:'energetic',
-    //     label:"yellow"
-    //   },
-    //   {
-    //     value:'calm',
-    //     label:"steelblue"
-    //   },
-    //   {
-    //     value:'sad',
-    //     label:"rgb(223, 138, 223)"
-    //   },
-    //   {
-    //     value:'happy',
-    //     label:"salmon"
-    //   },
-    //    {
-    //     value:'tired',
-    //     label:"#89cfeb"
-    //   }
-    // ];
-    // var [setbgcolor, ddlvalue]=useState(colors.label);
-    // var ddlhandle = e =>
-    // {
-    //   ddlvalue(e.label);
-    // }
-
-
     return (
 
    

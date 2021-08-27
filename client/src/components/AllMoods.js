@@ -36,7 +36,7 @@ export class AllMoods extends React.Component{
               <div >
                   {this.state.allData.map((moods)=>(
                       <div id="eachMood">
-                            <h3> {moods.date.slice(0,10)}</h3>
+                            <h3> 🗓️{moods.date.slice(0,10)}</h3>
                         <div id="eachMoodInner">
                                 {/* <h2>Date : </h2>
                                 <p>{moods.date.slice(0,10)}</p>

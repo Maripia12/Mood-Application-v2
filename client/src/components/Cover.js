@@ -1,42 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+import React from "react";
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />  
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
-    <title> Mood App </title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+import "./../css/Cover.css";
 
-    <!-- <svg
-    id=logo fill= "none" viewBox="0 0 972 119" xmlns="http://www.w3.org/2000/svg">
+export const Cover = () => {
+
+// Define svg paths and style properties
+const logo = document.querySelectorAll('#logo path'),
+styles = ['stroke', 'delay', 'array', 'offset'];
+let delay = 0;
+// Iterate through svg paths
+for (let i = 0; i < logo.length; i++) {
+  // Define each path and its length
+  const letter = logo[i],
+  totalLength = letter.getTotalLength();
+  // Iterate through path style properties
+  for (let o = 0; o < styles.length; o++) {
+    // Define style property
+    const s = styles[o];
+    // Set each path style property
+    letter.style.setProperty(
+      s == 'stroke' ? 'stroke' : s == 'delay' ? '--delay' : `stroke-dash${s}`,
+      s == 'stroke' ? 'white' : s == 'delay' ? `${0.5}s` : totalLength
+    );
+  }
+  // Increment delay property
+  delay += 0.03;
+}
+document.styleSheets[0].insertRule(`#logo { 
+  animation: fill 2s ease forwards ${delay+2}s
+}`);
+
+
+return(
+   <svg id="logo" fill= "none" viewBox="0 0 972 119" xmlns="http://www.w3.org/2000/svg">
     <path d="M107.341 12.352V112H94.2373V37.696L61.1173 112H51.9013L18.6373 37.552V112H5.53333V12.352H19.6453L56.5093 94.72L93.3733 12.352H107.341Z"/>
     <path d="M163.981 113.296C156.589 113.296 149.869 111.616 143.821 108.256C137.869 104.896 133.165 100.144 129.709 94C126.349 87.76 124.669 80.56 124.669 72.4C124.669 64.336 126.397 57.232 129.853 51.088C133.405 44.848 138.205 40.096 144.253 36.832C150.301 33.472 157.069 31.792 164.557 31.792C172.045 31.792 178.813 33.472 184.861 36.832C190.909 40.096 195.661 44.8 199.117 50.944C202.669 57.088 204.445 64.24 204.445 72.4C204.445 80.56 202.621 87.76 198.973 94C195.421 100.144 190.573 104.896 184.429 108.256C178.285 111.616 171.469 113.296 163.981 113.296ZM163.981 101.776C168.685 101.776 173.101 100.672 177.229 98.464C181.357 96.256 184.669 92.944 187.165 88.528C189.757 84.112 191.053 78.736 191.053 72.4C191.053 66.064 189.805 60.688 187.309 56.272C184.813 51.856 181.549 48.592 177.517 46.48C173.485 44.272 169.117 43.168 164.413 43.168C159.613 43.168 155.197 44.272 151.165 46.48C147.229 48.592 144.061 51.856 141.661 56.272C139.261 60.688 138.061 66.064 138.061 72.4C138.061 78.832 139.213 84.256 141.517 88.672C143.917 93.088 147.085 96.4 151.021 98.608C154.957 100.72 159.277 101.776 163.981 101.776Z"/>
     <path d="M256.09 113.296C248.698 113.296 241.978 111.616 235.93 108.256C229.978 104.896 225.274 100.144 221.818 94C218.458 87.76 216.778 80.56 216.778 72.4C216.778 64.336 218.506 57.232 221.962 51.088C225.514 44.848 230.314 40.096 236.362 36.832C242.41 33.472 249.178 31.792 256.666 31.792C264.154 31.792 270.922 33.472 276.97 36.832C283.018 40.096 287.77 44.8 291.226 50.944C294.778 57.088 296.554 64.24 296.554 72.4C296.554 80.56 294.73 87.76 291.082 94C287.53 100.144 282.682 104.896 276.538 108.256C270.394 111.616 263.578 113.296 256.09 113.296ZM256.09 101.776C260.794 101.776 265.21 100.672 269.338 98.464C273.466 96.256 276.778 92.944 279.274 88.528C281.866 84.112 283.162 78.736 283.162 72.4C283.162 66.064 281.914 60.688 279.418 56.272C276.922 51.856 273.658 48.592 269.626 46.48C265.594 44.272 261.226 43.168 256.522 43.168C251.722 43.168 247.306 44.272 243.274 46.48C239.338 48.592 236.17 51.856 233.77 56.272C231.37 60.688 230.17 66.064 230.17 72.4C230.17 78.832 231.322 84.256 233.626 88.672C236.026 93.088 239.194 96.4 243.13 98.608C247.066 100.72 251.386 101.776 256.09 101.776Z"/>
@@ -59,20 +55,11 @@
     <path d="M802.231 31.648C811.831 31.648 819.607 34.576 825.559 40.432C831.511 46.192 834.487 54.544 834.487 65.488V112H821.527V67.36C821.527 59.488 819.559 53.488 815.623 49.36C811.687 45.136 806.311 43.024 799.495 43.024C792.583 43.024 787.063 45.184 782.935 49.504C778.903 53.824 776.887 60.112 776.887 68.368V112H763.783V33.088H776.887V44.32C779.479 40.288 782.983 37.168 787.399 34.96C791.911 32.752 796.855 31.648 802.231 31.648Z" stroke="#8A6B52" stroke-width="10" mask="url(#path-1-outside-1)"/>
     <path d="M850.997 72.256C850.997 64.192 852.629 57.136 855.893 51.088C859.157 44.944 863.621 40.192 869.285 36.832C875.045 33.472 881.429 31.792 888.437 31.792C895.349 31.792 901.349 33.28 906.437 36.256C911.525 39.232 915.317 42.976 917.813 47.488V33.088H931.061V112H917.813V97.312C915.221 101.92 911.333 105.76 906.149 108.832C901.061 111.808 895.109 113.296 888.293 113.296C881.285 113.296 874.949 111.568 869.285 108.112C863.621 104.656 859.157 99.808 855.893 93.568C852.629 87.328 850.997 80.224 850.997 72.256ZM917.813 72.4C917.813 66.448 916.613 61.264 914.213 56.848C911.813 52.432 908.549 49.072 904.421 46.768C900.389 44.368 895.925 43.168 891.029 43.168C886.133 43.168 881.669 44.32 877.637 46.624C873.605 48.928 870.389 52.288 867.989 56.704C865.589 61.12 864.389 66.304 864.389 72.256C864.389 78.304 865.589 83.584 867.989 88.096C870.389 92.512 873.605 95.92 877.637 98.32C881.669 100.624 886.133 101.776 891.029 101.776C895.925 101.776 900.389 100.624 904.421 98.32C908.549 95.92 911.813 92.512 914.213 88.096C916.613 83.584 917.813 78.352 917.813 72.4Z" stroke="#8A6B52" stroke-width="10" mask="url(#path-1-outside-1)"/>
     <path d="M966.309 5.44V112H953.205V5.44H966.309Z" stroke="#8A6B52" stroke-width="10" mask="url(#path-1-outside-1)"/>
-    </svg> -->
+    </svg>
+)
 
-    <!-- <script src="Cover.js"></script> -->
 
 
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
-</html>
+}

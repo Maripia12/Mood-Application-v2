@@ -10,20 +10,19 @@ body{
  #mainP{
     font-weight: 600;
 }
-#searchLabel{
-    /* margin: 10px; */
-} 
+
+.select-mood {
+    background-color: rgb(118, 247, 206);
+    padding: 10px;
+    font-size: 15px ;
+    border-radius: 5px 5px 5px;
+    font-family: 'Kalam', cursive;
+  
+}
+
 
 #searchForm{
     /* display: inline; */
     /* background-color: red; */
     /* padding: 5px; */
-}
-
-#searchInput{
-    margin: 10px;
-    padding: 5px 20px;
-}
-.searchBtn{
-    max-width: 100px;
 }

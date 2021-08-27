@@ -69,13 +69,26 @@ window.location.href="/";
 </div>
                        
                  </form>
-            
-        </div>
+
           );
-      }
+      
+
+
+
+         <img className= "turtle" src="https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475"/>              
+
+
+</div>
+
+);
+}
 }
 
-// export const LoginPage = () => {
+
+
+
+
+/* // export const LoginPage = () => 
 
      
 
@@ -96,4 +109,4 @@ window.location.href="/";
             
 //         </div>
 //     )
-// }
+// } */

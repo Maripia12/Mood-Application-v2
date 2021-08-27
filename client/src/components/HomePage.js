@@ -128,7 +128,7 @@ export class  HomePage extends React.Component {
 
     }
 
-    //Modallllls
+    //Modals
 
   openModal() {
     //setIsOpen(true);
@@ -192,7 +192,7 @@ render(){
 
                     <div id="prompt">
                         <p>
-                            {/* {if(promt)} */}
+                            {/* {if(prompt)} */}
                             {prompt = `Why are you feeling ${this.state.option} today?  `}
                         </p>
                     </div>

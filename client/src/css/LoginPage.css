@@ -141,6 +141,7 @@ body {
 
 #btn{
     background-color: #417477;
+    box-shadow: 5px 5px 5px rgb(131, 122, 122);
     border: none;
     color: white;
     width: 40%;
@@ -159,6 +160,7 @@ body {
 .btn-l{
     text-align: right;
     float: right;
+     
 }
 
 
@@ -172,4 +174,13 @@ body {
         width: 60%;
       
     }
+}
+
+#myCarousel {
+    position: absolute;
+    right: 90%;
+    display: inline-block;
+    
+
+   
 }

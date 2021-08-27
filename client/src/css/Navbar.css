@@ -1,13 +1,48 @@
 nav{
-    background-color: rgb(83, 178, 255);
+    background-color: rgb(187, 245, 245);
+    border: 5px solid #a1770b;
     text-align: center;
     font-weight: bolder;
     height: 60px;
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    padding-top: 20px;
+ 
+}
+
+
+
+
+
+
+a { 
     
+    text-decoration: none;
+    color: rgb(36, 35, 35);
+    text-shadow: 2px 2px rgb(144, 167, 159);
+    margin: 120px;
+    padding: 25px;
+   
+   
+   
+     
+}
+
+a:hover {
+    color: #a1780f
+}
+
+.logo {
+    position: absolute;
+    left:25px;
+    bottom: 87%;
+    /* margin-bottom: 20px; */
+    width: 120px;
+    height: 118px;
     
 }
+
 
 #navText{
     margin:  auto;
@@ -16,7 +51,7 @@ nav{
 }
 
 .mrg{
-    margin: 15px;
+    margin: 155px;
     cursor: pointer;
 }
 
@@ -62,3 +97,12 @@ nav{
     cursor: pointer;
     margin-bottom: 5px;
   }
+@media (max-width:992px) {
+  
+    .logo {
+    position: relative;
+    /* right: 95px; */
+    width: 100px;
+    height: 100px;
+}
+}

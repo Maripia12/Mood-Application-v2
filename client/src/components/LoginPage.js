@@ -1,7 +1,9 @@
 import React from 'react'
 import './../css/LoginPage.css'
 
+
 import { Header } from './../components/Header'
+
 
 //export const LoginPage = () => {
 export class LoginPage extends React.Component{
@@ -57,8 +59,14 @@ window.location.href="/";
               window.location.href="/";
           }
           return(
+
+
+   
+        
+            
 <div id="main-login">
 <Header />
+
              <h3 id="form-heading">Login</h3>
                  <form id="main-form">
                          <label className="formLabel">Email</label>
@@ -75,14 +83,21 @@ window.location.href="/";
                  </form>
 
          
-      
+       
+              
+ 
+
+         <img className= "turtle" src="https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475"/>    
 
 
 
-         <img className= "turtle" src="https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475"/>              
 
-
+ 
 </div>
+
+
+ 
+ 
 
 );
 }

@@ -1,6 +1,7 @@
 import { LoginPage } from './components/LoginPage';
 import { SignupPage } from './components/SignupPage';
 import {HomePage} from './components/HomePage';
+
 // import {Navbar} from './components/Navbar';
 
 // import {Cover} from './components/Cover';
@@ -16,7 +17,7 @@ import { AllMoods } from './components/AllMoods';
 function App() {  
 
   return (
-
+    
    
     
   

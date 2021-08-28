@@ -1,5 +1,6 @@
 import React from 'react'
 import './../css/SignupPage.css'
+import { Header } from './../components/Header'
 
 export class SignupPage extends React.Component {
 
@@ -89,7 +90,8 @@ console.log(data);
             window.location.href="/Homepage";
         }
     return (
-        <div id="main-login">
+        <div id="main-login2">
+            <Header />
             <h3 id="form-heading">Sign Up</h3>
                 <form id="main-form">
                         <label className="formLabel">First Name</label>
@@ -119,6 +121,7 @@ console.log(data);
 </div>
 
                 </form>
+                <img className= "handnote" src= "https://images.unsplash.com/photo-1569229569803-69384f5efa83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fHF1b3Rlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"></img>
             
         </div>
     )

@@ -2,9 +2,13 @@ import React,{props, useState} from 'react'
 // import Modal from 'react-modal';
 import {Modal} from './Modal.js'
 import './../css/HomePage.css'
+import './../css/MoodJournal.css'
 
 import { Navbar } from './../components/Navbar'
 import { AllMoods } from './AllMoods'
+
+
+
 
 const customStyles = {
     content: {
@@ -30,7 +34,7 @@ export class  HomePage extends React.Component {
         //const [textVal,setTextVal] = useState()
         
         
-        this.state = {option: '',txtVal:'',quote:'',date:new Date().toJSON().slice(0,10).replace(/-/g,'/'),allMoods:[
+        this.state = {option: 'className',txtVal:'',quote:'',date:new Date().toJSON().slice(0,10).replace(/-/g,'/'),allMoods:[
             'angry',
             'anxious',
             'energetic',
@@ -172,19 +176,19 @@ render(){
             <Navbar/>
             <div id="topContainer">
                 <div>
-                    <h4>Date: {this.state.date}</h4>
+                    <h4><u>Date</u>: 🗓️ {this.state.date}</h4>
                 </div>
-                <div>
+                {/* <div>
                     <button id="" className="btnTop">Today's Journal</button>
                     <button id="" className="btnTop" onClick={this.gotoAllMoods}>Past Journal Entries</button>
-                </div>
+                </div> */}
                 
             </div>
                
                <div id="container">
                     <label>
-                        what is your mood?
-                        <select name='option' onChange={this.handleChange}>
+                        <select className = 'mood-options' name='option' onChange={this.handleChange}>
+                          <option disabled selected>What is your mood today?</option>
                             {this.state.allMoods.map((e)=><option value={e}>{e}</option>)}
                             
                         </select>
@@ -198,11 +202,11 @@ render(){
                     </div>
 
                     <div>
-                      <textarea id="textarea" onChange={this.handleTextVal}>
+                      <textarea id="textarea" cols="120" rows="30" onChange={this.handleTextVal}>
 
                       </textarea>
                       <div>
-                        <button id="btnSave" className="btn" onClick={ this.showModal}>save</button>
+                        <button id="btnSave" className="btn" onClick={ this.showModal}>Save</button>
                       </div>
                       <Modal show={this.state.show} handleClose={this.hideModal}>
                         <p>Quote for You : <b><blockquote>&ldquo;{this.state.quote}&rdquo; &mdash; <footer>Anxious</footer></blockquote></b></p>

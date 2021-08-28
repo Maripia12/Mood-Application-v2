@@ -1,4 +1,5 @@
 import './../css/Navbar.css';
+import './../css/MoodJournal.css';
 
 const Modal = ({ handleClose, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";

@@ -202,7 +202,7 @@ render(){
                     </div>
 
                     <div>
-                      <textarea id="textarea" cols="120" rows="30" onChange={this.handleTextVal}>
+                      <textarea id="textarea" cols="100" rows="40" onChange={this.handleTextVal}>
 
                       </textarea>
                       <div>

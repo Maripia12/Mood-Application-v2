@@ -33,18 +33,18 @@ body{
     right: 0px;
 }
 .btn{
-    max-width: 100px;
-    background-color: rgb(83, 178, 255);
+ background-color: #417477;
     border: none;
     color: white;
-    width: 40%;
+    width: 10%;
     height: 40px;
     text-align: center;
     margin: auto;
     padding: 10px;
     border-radius: 6px;
     font-weight: 400;
-    cursor: pointer;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgb(131, 122, 122);
 }
 
 #btnDelete{

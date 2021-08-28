@@ -2,7 +2,6 @@ import { LoginPage } from './components/LoginPage';
 import { SignupPage } from './components/SignupPage';
 import {HomePage} from './components/HomePage';
 import {Navbar} from './components/Navbar';
-import {Cover} from './components/Cover';
 
 import {
   BrowserRouter as Router,
@@ -22,7 +21,7 @@ function App() {
       <Switch>
                 <Route path="/" component={()=>(<FirstPage />)} exact />
                 <Route path="/homepage" > <HomePage/> </Route>
-                
+              
                 <Route path="/allMoods" > <AllMoods/> </Route>
                 <Route path="/login" > <LoginPage/> </Route>
                 <Route path="/signup" component={SignupPage} />

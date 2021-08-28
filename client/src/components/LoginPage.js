@@ -40,7 +40,7 @@ export class LoginPage extends React.Component{
                     alert(data.message);
                     localStorage.setItem("token",data.token);
                     localStorage.setItem("user_id",data.msg._id);
-window.location.href="/";
+window.location.href="/Homepage";
                     }
                     else{
                         alert("Invalid Email or Password");
@@ -56,7 +56,7 @@ window.location.href="/";
 
       render(){
           if(localStorage.getItem("token")){
-              window.location.href="/";
+              window.location.href="/Homepage";
           }
           return(
 
@@ -81,17 +81,7 @@ window.location.href="/";
 </div>
                        
                  </form>
-
-         
-       
-              
- 
-
          <img className= "turtle" src="https://cdn.shopify.com/s/files/1/1751/8357/files/whats_not_to_love.jpg?v=1537129475"/>    
-
-
-
-
  
 </div>
 

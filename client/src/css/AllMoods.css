@@ -45,3 +45,7 @@ body{
 .heading>h5{
     margin: 5px auto !important;
 }
+
+#btns{
+    margin: 20px 0px;
+}

@@ -8,7 +8,7 @@ export const Navbar = ({currentPage, handlePageChange}) => {
             <div>
            
                     <a
-                 href="#home"
+                 href="/homepage"
                  onClick={()=> handlePageChange('Home')}
                  className={currentPage === 'Home' ?" nav-link active" : "nav-link"}
                  >
@@ -16,7 +16,7 @@ export const Navbar = ({currentPage, handlePageChange}) => {
                  </a>
                 
                     <a 
-                    href="#saved"
+                    href="/AllMoods"
                     onClick={()=> handlePageChange('Saved')}
                     >Saved Entries
                     </a>

@@ -34,15 +34,15 @@ export class  HomePage extends React.Component {
         //const [textVal,setTextVal] = useState()
         
         
-        this.state = {option: 'className',txtVal:'',quote:'',date:new Date().toJSON().slice(0,10).replace(/-/g,'/'),allMoods:[
-            'angry',
-            'anxious',
-            'energetic',
-            'calm',
-            'sad/depressed',
-            'focused',
-            'happy',
-            'tired'],show:false};
+        this.state = {option: '',className:'',txtVal:'',quote:'',date:new Date().toJSON().slice(0,10).replace(/-/g,'/'),allMoods:[
+            'Frustrated',
+            'Anxious',
+            'Energetic',
+            'Calm',
+            'Sad',
+            'Focused',
+            'Happy',
+            'Tired'],show:false};
             
             this.showModal = this.showModal.bind(this);
             this.hideModal = this.hideModal.bind(this);
@@ -115,9 +115,9 @@ export class  HomePage extends React.Component {
           .then(response => response.json())
           .then(data => 
             {
-                  if(data.succes){
+                  if(data.success){
                   alert(data.message);
-                  console.log("sucess");
+                  console.log("success");
                   }
                   else{
                     console.log("error");
@@ -196,8 +196,8 @@ render(){
 
                     <div id="prompt">
                         <p>
-                            {/* {if(promt)} */}
-                            {prompt = `you are ${this.state.option} `}
+                            {/* {if(prompt)} */}
+                            {prompt = `You are feeling ${this.state.option}`}
                         </p>
                     </div>
 
@@ -209,7 +209,7 @@ render(){
                         <button id="btnSave" className="btn" onClick={ this.showModal}>Save</button>
                       </div>
                       <Modal show={this.state.show} handleClose={this.hideModal}>
-                        <p>Quote for You : <b><blockquote>&ldquo;{this.state.quote}&rdquo; &mdash; <footer>Anxious</footer></blockquote></b></p>
+                        <p>Quote for You: <b><blockquote>&ldquo;{this.state.quote}&rdquo;</blockquote></b></p>
                         </Modal>
 
                     </div>

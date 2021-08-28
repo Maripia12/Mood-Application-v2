@@ -7,15 +7,15 @@ export const Navbar = ({currentPage, handlePageChange}) => {
             <img className ="logo" src = "https://api.freelogodesign.org/files/f077bb1a586a4cc7afd80d94fe0a7eb1/thumb/logo_200x200.png?v=637652428960000000"/>
             <div>
            
-                    <a
+                    <a id = "links"
                  href="/homepage"
                  onClick={()=> handlePageChange('Home')}
-                 className={currentPage === 'Home' ?" nav-link active" : "nav-link"}
+                 className ={currentPage === 'Home' ?" nav-link active" : "nav-link"}
                  >
                      Mood Journal
                  </a>
                 
-                    <a 
+                    <a id = "links"
                     href="/AllMoods"
                     onClick={()=> handlePageChange('Saved')}
                     >Saved Entries

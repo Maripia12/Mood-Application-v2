@@ -193,16 +193,17 @@ render(){
                             
                         </select>
                     </label>
+                    
 
                     <div id="prompt">
                         <p>
                             {/* {if(prompt)} */}
-                            {prompt = `You are feeling ${this.state.option}`}
+                            {prompt = `You are feeling.. ${this.state.option}`}
                         </p>
                     </div>
 
                     <div>
-                      <textarea id="textarea" cols="100" rows="40" onChange={this.handleTextVal}>
+                      <textarea id="textarea" cols="125" rows="40" onChange={this.handleTextVal}>
 
                       </textarea>
                       <div>

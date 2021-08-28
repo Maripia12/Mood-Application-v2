@@ -42,7 +42,7 @@ export const MoodJournal = () => {
             <div className="select"></div>
                <p class= "journal">
                 <textarea className = "select-mood" useState = "color"
-                cols="120" rows="30" name="journal">
+                cols="100" rows="30" name="journal">
                 </textarea>
                   </p>
                <input class="btn btn-save" type="submit" value="Save" />

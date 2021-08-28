@@ -75,8 +75,8 @@ window.location.href="/Homepage";
                          <label className="formLabel">Password</label>
                          <input className="formInput" type="password" value={this.state.password} onChange={this.handlePassword} id ="password" for="password" />
 <div className="btn-r">
-<button type="submit" onClick={this.handleSubmit} id="btn">login</button>
-<button type="submit" onClick={this.GotoSignup} id="btn" className="btn-l">Signup</button>
+<button type="submit" onClick={this.handleSubmit} id="btn">Login</button>
+<button type="submit" onClick={this.GotoSignup} id="btn" className="btn-l">Sign Up</button>
                   
 </div>
                        

@@ -70,7 +70,6 @@ window.location.href="/";
                        
                  </form>
 
-          );
       
 
 

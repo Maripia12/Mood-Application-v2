@@ -111,9 +111,9 @@ export class  HomePage extends React.Component {
           .then(response => response.json())
           .then(data => 
             {
-                  if(data.success){
+                  if(data.succes){
                   alert(data.message);
-                  console.log("success");
+                  console.log("sucess");
                   }
                   else{
                     console.log("error");
@@ -128,7 +128,7 @@ export class  HomePage extends React.Component {
 
     }
 
-    //Modals
+    //Modallllls
 
   openModal() {
     //setIsOpen(true);
@@ -192,8 +192,8 @@ render(){
 
                     <div id="prompt">
                         <p>
-                            {/* {if(prompt)} */}
-                            {prompt = `Why are you feeling ${this.state.option} today?  `}
+                            {/* {if(promt)} */}
+                            {prompt = `you are ${this.state.option} `}
                         </p>
                     </div>
 

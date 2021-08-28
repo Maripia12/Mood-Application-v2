@@ -1,6 +1,6 @@
 var mongoose=require('mongoose');
 
-const config=require('../config/config').get(process.env.NODE_ENV);
+const confiq=require('../config/config').get(process.env.NODE_ENV);
 
 const quoteSchema=mongoose.Schema({
 

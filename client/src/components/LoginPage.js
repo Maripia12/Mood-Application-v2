@@ -35,7 +35,7 @@ export class LoginPage extends React.Component{
                     alert(data.message);
                     localStorage.setItem("token",data.token);
                     localStorage.setItem("user_id",data.msg._id);
-window.location.href="/";
+window.location.href="/Homepage";
                     }
                     else{
                         alert("Invalid Email or Password");
@@ -51,7 +51,7 @@ window.location.href="/";
 
       render(){
           if(localStorage.getItem("token")){
-              window.location.href="/";
+              window.location.href="/Homepage";
           }
           return(
 <div id="main-login">

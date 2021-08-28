@@ -10,7 +10,7 @@ router.post('/api/addQuote',function(req,res){
         if(err) {console.log(err);
             return res.status(400).json({message:"error failed" ,success : false});}
         res.status(200).json({
-            succes:true,
+            success:true,
             message :"Mood added successfully!",
             user : doc
         });
@@ -35,7 +35,7 @@ Quote.find({user_id:req.params.id},(err,obj)=>{
         
     console.log(obj);
     res.status(200).json({
-                succes:true,
+                success:true,
                 message :"Mood get successfully!",
                 data : obj
             });

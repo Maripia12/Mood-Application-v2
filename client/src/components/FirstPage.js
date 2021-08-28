@@ -32,7 +32,7 @@ export class FirstPage extends React.Component{
               }
         }
 
-        document.styleSheets[0].insertRule(`#logo { 
+        document.styleSheets[1].insertRule(`#logo { 
             animation: fill 2s ease forwards ${delay+2}s
           }`);
     }

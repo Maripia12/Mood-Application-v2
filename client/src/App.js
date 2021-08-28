@@ -16,7 +16,7 @@ function App() {
 
    <>
       <Switch>
-                {/* <Route path="/" component={()=>(<FirstPage />)} exact /> */}
+                <Route path="/" component={()=>(<FirstPage />)} exact />
                 <Route path="/homepage" > <HomePage/> </Route>
                 
                 <Route path="/allMoods" > <AllMoods/> </Route>

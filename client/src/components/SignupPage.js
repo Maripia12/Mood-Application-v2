@@ -86,7 +86,7 @@ console.log(data);
 
     render(){
         if(localStorage.getItem("token")){
-            window.location.href="/";
+            window.location.href="/Homepage";
         }
     return (
         <div id="main-login">

@@ -30,3 +30,16 @@ those quotes back to you
 
 Install the Node Modules required for a react application.
 Create the React app on the terminal name it anything you want.
+
+Contributors
+Eagle Le
+Pia Paulino
+Diamond Rosales
+Ebad Rehman
+GaTech Coding bootcamp
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

@@ -2,7 +2,7 @@
   {
     "moodType": "Happy",
     "quote": [
-      "See that being joyfull is your fundemental responsibility",
+      "See that being joyful is your fundamental responsibility",
       "See the mind for what it is",
       "Realize that joy is your original nature"
     ]
@@ -16,11 +16,53 @@
     ]
   },
   {
-    "moodType": "Angry",
+    "moodType": "Frustrated",
     "quote": [
-      "Anger makes you smaller, while forgiveness forces you to grow beyond what you were.",
-      "When anger rises, think of the consequences.",
-      "If you are patient in one moment of anger, you will escape a hundred days of sorrow."
+      "You've done it before and you can do it now. See the positive possibilitiesRedirect the substantial energy of your frustration and turn it into positive,effective,unstoppable determination.",
+      "Expectation is the mother of all frustration.",
+      "Being alone with fear can rapidly can rapidly turn into anger. Being alone with disappointment can rapid turn into discouragement and, even worse, despair."
+    ]
+  },
+
+  {
+    "moodType": "Anxious",
+    "quote": [
+      "Our anxiety does not come from thinking about the future, but from wanting to control it.",
+      "At the end of the day tell yourself gently:'I love you,you did the best you could today, and even if you didn't accomplish all you had planned, I love you anyway'",
+      "Anxiety's like a rocking chair. It gives you something to do, but it doesn't get you very far."
+    ]
+  },
+  {
+    "moodType": "Energetic",
+    "quote": [
+      "Enthusiasm is one of the most  powerful energies of success. When you do a thing, do it with all your might. Put you whole soul into it.Stamp it with your own personality. Be active, be energetic, be enthusiastic and faithful, and you will accomplish your object. Nothing great was ever achieved without enthusiasm. ",
+      "At the end of the day tell yourself gently:'I love you,you did the best you could today, and even if you didn't accomplish all you had planned, I love you anyway'",
+      "Surround yourself with positive, energetic, successful people and learn from them."
+    ]
+  },
+  {
+    "moodType": "Calm",
+    "quote": [
+      "It is not the fear or desire thought that's the problem - its the inability to control your reaction to that thought that may create a problem. ",
+      "our earliest messages were how we judged ourselves, how we knew if we were okay or loved or worthwhile. They came from outside in, and the more they were repeated, the more strongly we owned them. They became imprinted on our subconscious to be heard over and over again",
+      "To learn to think is to learn how to live."
+    ]
+  },
+  {
+    "moodType": "Focused",
+    "quote": [
+      "If you can’t stop thinking about it, don’t stop working towards it. Stay in peace, your breakthrough is coming.",
+      "Work on moving away from having only a vision and dream and focus more on the practical steps to get there.",
+      "There is always something worse, limit thinking about worse things and concentrate on the best things."
+    ]
+  },
+
+  {
+    "moodType": "Tired",
+    "quote": [
+      "No matter how tired you feel, no matter how much you want to quit, no matter what obstacles are in your way, keep moving toward the vision you have for your future.",
+      "When we are tired, we are attacked by ideas we conquered long ago.",
+      "If you get tired, learn to rest, not to quit."
     ]
   }
 ]

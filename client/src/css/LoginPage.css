@@ -87,6 +87,7 @@ body {
     animation-delay: 2s;
     visibility: hidden;
     animation-fill-mode:  forwards;
+    
 } 
 
 @keyframes moveleft {
@@ -176,11 +177,13 @@ body {
     }
 }
 
-#myCarousel {
+/* #myCarousel {
     position: absolute;
     right: 90%;
     display: inline-block;
     
 
    
-}
+} */
+
+

@@ -18,6 +18,27 @@
     background-color: rgb(84, 155, 155);
 }
 
+#closeBtn{
+    background-color: #417477;
+    border: none;
+    color: white;
+    box-shadow: 5px 5px 5px rgb(131, 122, 122);
+}
+#closeBtn:hover{
+    background-color: rgb(84, 155, 155);
+
+}
+
+.modal-main{
+    background-color: #9ce0f5;
+    width: 40%;
+    margin-bottom: 10px;
+    border-radius: 5px 5px 5px;
+    box-shadow: 5px 5px grey;
+
+   
+    
+}
 
 .angry {
     background-color: rgb(245, 45, 45);
@@ -45,4 +66,34 @@
 
 .tired {
     background-color: #89cfeb;
+}
+
+.mood-options{
+    background-color: #bcf0e5;
+    padding: 10px;
+    font-size: 15px ;
+    border-radius: 5px 5px 5px;
+    font-family: 'Kalam', cursive;
+    box-shadow: 5px 5px 5px rgb(112, 117, 117);
+
+}
+
+#prompt{
+    background-color: #bcf0e5;
+    margin-right: 600px;
+    margin-left: 600px;
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 5px rgb(112, 117, 117);
+}
+
+#textarea {
+    box-shadow: 5px 5px 5px rgb(112, 117, 117);
+    border-radius: 5px 5px;
+}
+
+
+#eachMoodInner{
+    background-color: rgb(184, 223, 228);
+
+    
 }

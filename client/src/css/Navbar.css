@@ -1,108 +1,104 @@
+.logo{
+  position: absolute;
+  left:25px;
+  bottom: 88%;
+    /* margin-bottom: 20px; */
+  width: 120px;
+  height: 118px;
+    
+
+}
+
 nav{
-    background-color: rgb(187, 245, 245);
+   background-color: rgb(187, 245, 245);
     border: 5px solid #a1770b;
     text-align: center;
     font-weight: bolder;
-    height: 60px;
+    height: 80px;
     display: flex;
     justify-content: center;
     flex-direction: row;
     padding-top: 20px;
- 
+  
 }
 
+#links{
+   text-decoration: none;
+   color: rgb(7, 7, 7);
+   text-shadow: 2px 2px rgb(144, 167, 159);
+   margin: 135px;
+   padding: 25px;
 
-
-
-
-
-a { 
-    
-    text-decoration: none;
-    color: rgb(36, 35, 35);
-    text-shadow: 2px 2px rgb(144, 167, 159);
-    margin: 120px;
-    padding: 25px;
-   
-   
-   
-     
 }
 
-a:hover {
+#links:hover {
     color: #a1780f
 }
 
-.logo {
-    position: absolute;
-    left:25px;
-    bottom: 87%;
-    /* margin-bottom: 20px; */
-    width: 120px;
-    height: 118px;
-    
-}
 
-
-#navText{
-    margin:  auto;
-    color: rgb(255, 253, 253);
-
-}
 
 .mrg{
-    margin: 155px;
-    cursor: pointer;
+  margin: 150px;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px rgb(144, 167, 159);
+  cursor: pointer;
+}
+a.mrg:hover {
+    color: #a1780f
 }
 
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width:100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-  }
-  
-  .modal-main {
-    position:fixed;
-    background: white;
-    width: 80%;
-    height: auto;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-  }
-  
-  .display-block {
-    display: block;
-  }
-  
-  .display-none {
-    display: none;
-  }
 
-  #closeBtn{
-    max-width: 100px;
-    background-color: rgb(83, 178, 255);
-    border: none;
-    color: white;
-    width: 40%;
-    height: 40px;
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-    border-radius: 6px;
-    font-weight: 400;
-    cursor: pointer;
-    margin-bottom: 5px;
-  }
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.modal-main {
+  position:fixed;
+  background: white;
+  width: 80%;
+  height: auto;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+#closeBtn{
+  max-width: 100px;
+  background-color: rgb(83, 178, 255);
+  border: none;
+  color: white;
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+
 @media (max-width:992px) {
   
     .logo {
     position: relative;
     /* right: 95px; */
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 110px;
 }
 }

@@ -4,28 +4,97 @@ body{
 }
 
 #container{
-    /* margin: 10px; */
+    
     padding: 10px;
     width: 90%;
     margin: 10px auto;
 }
 
+.mood-options {
+   /* margin-top: 4%;  */
+   margin-bottom: 1%;
+}
+#prompt {
+     margin-bottom: 2%;
+     color: lightcoral;
+     
+}
+
  #mainP{
     font-weight: 600;
 }
-
-.select-mood {
-    background-color: #b0ecdf;
-    padding: 10px;
-    font-size: 15px ;
-    border-radius: 5px 5px 5px;
-    font-family: 'Kalam', cursive;
-  
-}
-
+#searchLabel{
+    /* margin: 10px; */
+} 
 
 #searchForm{
     /* display: inline; */
     /* background-color: red; */
     /* padding: 5px; */
+}
+
+#searchInput{
+    margin: 10px;
+    padding: 5px 20px;
+}
+
+#btns{
+    position: relative;
+    right: 0px;
+}
+.btn{
+ background-color: #417477;
+    border: none;
+    color: white;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 400;
+    margin: 10px;
+    box-shadow: 5px 5px 5px rgb(131, 122, 122);
+}
+
+#btnDelete{
+    background-color: rgb(250, 15, 15);
+}
+
+#btnDelete:hover{
+    background-color: rgb(241, 122, 122);
+}
+
+/* #textarea{
+    width: 90%;
+    height: 50vh;
+} */
+
+#topContainer{
+    display: flex;
+    color: hsl(49, 95%, 48%);
+    text-shadow: 2px 2px 2px rgb(79, 87, 92);
+    width: 90%;
+    margin: 10px auto;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+
+#topContainer h4{
+    /* color: white; */
+}
+
+.btnTop{
+    background-color: rgb(83, 178, 255);
+    border: none;
+    color: white;
+    height: 40px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: 400;
+    margin: 0px 10px;
+    cursor: pointer;
 }

@@ -10,14 +10,19 @@ export const Navbar = ({ currentPage, handlePageChange }) => {
       />
       <div>
         <a
-          href="#home"
+          id="links"
+          href="/homepage"
           onClick={() => handlePageChange("Home")}
           className={currentPage === "Home" ? " nav-link active" : "nav-link"}
         >
           Mood Journal
         </a>
 
-        <a href="#saved" onClick={() => handlePageChange("Saved")}>
+        <a
+          id="links"
+          href="/AllMoods"
+          onClick={() => handlePageChange("Saved")}
+        >
           Saved Entries
         </a>
 

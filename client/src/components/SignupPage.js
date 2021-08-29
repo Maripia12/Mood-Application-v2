@@ -1,5 +1,6 @@
 import React from 'react'
 import './../css/SignupPage.css'
+import { Header } from './../components/Header'
 
 export class SignupPage extends React.Component {
 
@@ -86,10 +87,11 @@ console.log(data);
 
     render(){
         if(localStorage.getItem("token")){
-            window.location.href="/";
+            window.location.href="/Homepage";
         }
     return (
-        <div id="main-login">
+        <div id="main-login2">
+            <Header />
             <h3 id="form-heading">Sign Up</h3>
                 <form id="main-form">
                         <label className="formLabel">First Name</label>
@@ -112,13 +114,14 @@ console.log(data);
                         <label className="formLabel">Confirm Password</label>
                         <input className="formInput" value={this.state.password2} onChange={this.handlePassword2} type="password" id ="confirmPassword" for="password" />
 <div className="btn-r">
-<button onClick={this.handleSubmit} id="btn">Sign up</button>
+<button onClick={this.handleSubmit} id="btn">Sign Up</button>
 
     <button onClick={this.GotoLogin} className="btn-l" id="btn">Login</button>
                    
 </div>
 
                 </form>
+                <img className= "handnote" src= "https://images.unsplash.com/photo-1569229569803-69384f5efa83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODZ8fHF1b3Rlc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"></img>
             
         </div>
     )

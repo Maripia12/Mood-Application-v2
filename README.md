@@ -12,3 +12,21 @@ MongoDB
 Express
 React
 Node
+
+Usage
+On the app setup your login username and password
+
+# Mood Selection
+
+Select the mood you are in.
+
+# Journal Entry
+
+You can enter different quotes from the journal entry and save it.
+The database will save your input and with the login you can fetch
+those quotes back to you
+
+# Installation
+
+Install the Node Modules required for a react application.
+Create the React app on the terminal name it anything you want.

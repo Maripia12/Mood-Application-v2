@@ -18,6 +18,11 @@ function App() {
             <HomePage />{" "}
           </Route>
 
+          <Route path="/navbar">
+            {" "}
+            <Navbar />{" "}
+          </Route>
+
           <Route path="/allMoods">
             {" "}
             <AllMoods />{" "}
@@ -32,4 +37,5 @@ function App() {
     );
   }
 }
+
 export default App;

@@ -8,28 +8,26 @@ import { AllMoods } from "./components/AllMoods";
 import { FirstPage } from "./components/FirstPage";
 
 function App() {
-  function App() {
-    return (
-      <>
-        <Switch>
-          <Route path="/" component={() => <FirstPage />} exact />
-          <Route path="/homepage">
-            {" "}
-            <HomePage />{" "}
-          </Route>
+  return (
+    <>
+      <Switch>
+        <Route path="/" component={() => <FirstPage />} exact />
+        <Route path="/homepage">
+          {" "}
+          <HomePage />{" "}
+        </Route>
 
-          <Route path="/allMoods">
-            {" "}
-            <AllMoods />{" "}
-          </Route>
-          <Route path="/login">
-            {" "}
-            <LoginPage />{" "}
-          </Route>
-          <Route path="/signup" component={SignupPage} />
-        </Switch>
-      </>
-    );
-  }
+        <Route path="/allMoods">
+          {" "}
+          <AllMoods />{" "}
+        </Route>
+        <Route path="/login">
+          {" "}
+          <LoginPage />{" "}
+        </Route>
+        <Route path="/signup" component={SignupPage} />
+      </Switch>
+    </>
+  );
 }
 export default App;

@@ -19,7 +19,7 @@ export const MoodJournal = () => {
                 }}
                 >
                     <option disabled selected>What is your mood today?</option>
-                    <option className= "angry" value="angry">Frustrated</option>
+                    <option className= "frustrated" value="frustrated">Frustrated</option>
                     <option className= "anxious" value="anxious">Anxious</option>
                     <option className= "energetic" value="energetic">Energetic</option>
                     <option className= "calm" value="calm">Calm</option>

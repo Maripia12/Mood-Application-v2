@@ -35,14 +35,15 @@ export class  HomePage extends React.Component {
         
         
         this.state = {option: '',className:'',txtVal:'',quote:'',date:new Date().toJSON().slice(0,10).replace(/-/g,'/'),allMoods:[
-            'Frustrated',
-            'Anxious',
-            'Energetic',
-            'Calm',
-            'Sad',
-            'Focused',
-            'Happy',
-            'Tired'],show:false};
+            'frustrated',
+            'anxious',
+            'energetic',
+            'calm',
+            'sad',
+            'focused',
+            'happy',
+            'tired',
+          ],show:false};
             
             this.showModal = this.showModal.bind(this);
             this.hideModal = this.hideModal.bind(this);

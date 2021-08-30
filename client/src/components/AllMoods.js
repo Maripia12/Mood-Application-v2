@@ -130,11 +130,11 @@ handleMessage(event){
                                 <h1>{moods.mood}</h1>
                             </div>
                             <div className = "heading">
-                                <h4>Promt: </h4>
+                                <h4></h4>
                                 <p>{moods.prompt}</p>
                             </div>
                             <div className = "heading">
-                                <h4>Message</h4>
+                                <h4>Entry: </h4>
                                 <p>{moods.message}</p>
                             </div>
                                                 

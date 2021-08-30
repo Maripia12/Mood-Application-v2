@@ -20,10 +20,7 @@ const customStyles = {
       transform: 'translate(-50%, -50%)',
     },
   };
-
-//   Modal.setAppElement(document.getElementById('root'));
-
-export class  HomePage extends React.Component {
+  export class  HomePage extends React.Component {
     constructor(props) {
         super(props);
 
@@ -34,7 +31,7 @@ export class  HomePage extends React.Component {
         //const [textVal,setTextVal] = useState()
         
         
-        this.state = {option: '',className:'',txtVal:'',quote:'',date:new Date().toJSON().slice(0,10).replace(/-/g,'/'),allMoods:[
+        this.state = {option: '',txtVal:'',quote:'',date:new Date().toJSON().slice(0,10).replace(/-/g,'/'),allMoods:[
             'frustrated',
             'anxious',
             'energetic',
@@ -42,8 +39,7 @@ export class  HomePage extends React.Component {
             'sad',
             'focused',
             'happy',
-            'tired',
-          ],show:false};
+            'tired'],show:false};
             
             this.showModal = this.showModal.bind(this);
             this.hideModal = this.hideModal.bind(this);
@@ -65,9 +61,24 @@ export class  HomePage extends React.Component {
     }
 
     showModal = () => {
-        this.setState({ show: true });
-      };
+      fetch(`/api/getQuotes/${this.state.option}`)
+      .then(response => response.json())
+      .then(data => {
+          
+      var randomIndex = Math.floor(Math.random() * (data.data.length + 1));
+          
+      if(data.data[randomIndex]){
+        console.log(data.data[randomIndex].quotes);
     
+        this.setState({quote:data.data[randomIndex].quotes});
+        
+      this.setState({ show: true });
+        // console.log(quote);
+            }
+      
+      });
+    };
+  
       hideModal = (event) => {
         this.setState({ show: false });
         this.handlePostQuote(event);
@@ -82,18 +93,12 @@ export class  HomePage extends React.Component {
         //setOption(event.target.value)
         console.log(event.target.value);
     
-        fetch(`https://zenquotes.io/api/quotes/author/${event.target.value}/586f0cb160dc959e5316dee371007b01a9611f8c?custom=true`).then(response => response.json()).
-        then(data => {
-            
-        var randomIndex = Math.floor(Math.random() * (data.length + 1));
-            
-        console.log(data[randomIndex].q);
-    
-        this.setState({quote:data[randomIndex].q});
-        // console.log(quote);
         
-        });
     }
+
+//   Modal.setAppElement(document.getElementById('root'));
+
+
      handleTextVal(event){
          this.setState({txtVal:event.target.value});
         //setTextVal(event.target.value)

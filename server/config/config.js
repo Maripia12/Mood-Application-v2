@@ -1,15 +1,14 @@
-const config={
-    production :{
-        SECRET: process.env.SECRET,
-        DATABASE: process.env.MONGODB_URI
-    },
-    default : {
-        SECRET: 'mysecretkey',
-        DATABASE: 'mongodb+srv://EagleLamle:eaglelamle@cluster0.nwthj.mongodb.net/workout?retryWrites=true&w=majority'
-    }
-}
+const config = {
+  // production :{
+  //     SECRET: process.env.SECRET,
+  //     DATABASE: process.env.MONGODB_URI
+  // },
+  default: {
+    SECRET: "mysecretkey",
+    DATABASE: "mongodb://localhost/users",
+  },
+};
 
-
-exports.get = function get(env){
-    return config[env] || config.default
-}
+exports.get = function get(env) {
+  return config[env] || config.default;
+};

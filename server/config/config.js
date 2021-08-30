@@ -5,7 +5,7 @@ const config={
     },
     default : {
         SECRET: 'mysecretkey',
-        DATABASE: 'mongodb://localhost/users'
+        DATABASE: 'mongodb+srv://EagleLamle:eaglelamle@cluster0.nwthj.mongodb.net/workout?retryWrites=true&w=majority'
     }
 }
 

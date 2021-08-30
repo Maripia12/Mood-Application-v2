@@ -141,7 +141,7 @@ handleMessage(event){
                          </div>
                          <div id="btns">
                             <button id="btnEdit" className="btn" onClick={()=>this.showModal(moods._id,moods.mood,moods.message,moods.prompt)}>Edit</button>
-                            <button id="btnDelete" onClick={()=>this.btnDelete(moods._id)} className="btn">delete</button>
+                            <button id="btnDelete" onClick={()=>this.btnDelete(moods._id)} className="btn">Delete</button>
                          </div>
                          </div>
                   ))}

@@ -87,6 +87,7 @@ body {
     animation-delay: 2s;
     visibility: hidden;
     animation-fill-mode:  forwards;
+    
 } 
 
 @keyframes moveleft {

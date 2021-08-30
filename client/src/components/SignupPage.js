@@ -114,7 +114,7 @@ console.log(data);
                         <label className="formLabel">Confirm Password</label>
                         <input className="formInput" value={this.state.password2} onChange={this.handlePassword2} type="password" id ="confirmPassword" for="password" />
 <div className="btn-r">
-<button onClick={this.handleSubmit} id="btn">Sign up</button>
+<button onClick={this.handleSubmit} id="btn">Sign Up</button>
 
     <button onClick={this.GotoLogin} className="btn-l" id="btn">Login</button>
                    
